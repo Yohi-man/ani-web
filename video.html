@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Watch - Brick of Heaven</title>
+  <link rel="stylesheet" href="video.css">
+</head>
+<body>
+  
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">h!anime</div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search anime...">
+      <button>Filter</button>
+    </div>
+    <div class="nav-links">
+      <a href="watch-link.html">Watch2gether</a>
+      <a href="home.html">Random</a>
+      <a href="search.html">Anime Name</a>
+      <!-- <a href="#">Community</a> -->
+
+    </div>
+    <button class="login-btn">Login</button>
+  </header>
+  <!-- Main Content -->
+  <main class="main-content-watch">
+    <!-- Episode List -->
+    <section class="episode-list">
+      <h2>List of episodes:</h2>
+      <input type="text" placeholder="Number of Ep">
+      <ul>
+        <li class="active-episode">Episode 1 <button class="play-btn">▶</button></li>
+        <li class="active-episode">Episode 2 <button class="play-btn">▶</button></li>
+        <li class="active-episode">Episode 3 <button class="play-btn">▶</button></li>
+        <li class="active-episode">Episode 4 <button class="play-btn">▶</button></li>
+        <li> class="active-episode">Episode 5 <button class="play-btn">▶</button></li>
+        <li> class="active-episode">Episode 6 <button class="play-btn">▶</button></li>
+        <!-- Add more episodes -->
+      </ul>
+    </section>
+
+    <!-- Video Player and Anime Info -->
+    <section class="video-player-section">
+      <div class="video-player">
+        <!-- Placeholder for video player -->
+          <video id="animeVideo" width="100%" height="auto" controls>
+              <source src="VID.mp4" type="video/mp4">
+               Your browser does not support the video tag.
+          </video>
+          </div>
+          <!-- Custom Controls (just as an example) -->
+          <div class="video-controls">
+            <button id="playPauseBtn">Play</button>
+            <button id="fullscreenBtn">Expand</button>
+          </div>
+        </div>
+        <div class="video-controls">
+          <button>Expand</button>
+          <button>Light: On</button>
+          <button>Auto Play: Off</button>
+          <button>Auto Skip Intro: On</button>
+        </div>
+      </div>
+
+  <!-- Recommended and Most Popular -->
+  <section class="recommendations">
+    <div class="recommended">
+      <h2>Recommended for you</h2>
+      <div class="recommendation-grid">
+        <div class="recommendation-card">
+          <img src="Viral Hit.jpg" alt="Viral Hit">
+          <p>Viral Hit</p>
+        </div>
+        <div class="recommendation-card">
+          <img src="anime2.jpg" alt="Studio Apartment, Good Lighting...">
+          <p>Studio Apartment, Good Lighting...</p>
+        </div>
+        <!-- Add more recommendations -->
+      </div>
+    </div>
+
+    <div class="most-popular">
+      <h2>Most Popular</h2>
+      <ul>
+        <li>One Piece</li>
+        <li>Naruto: Shippuden</li>
+        <li>Bleach</li>
+        <!-- Add more popular anime -->
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 h!anime</p>
+  </footer>
+</body>
+</html>

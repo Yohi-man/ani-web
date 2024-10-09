@@ -1,0 +1,252 @@
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #2c2c3b;
+  border-radius: 5px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff4da6;
+  border-radius: 5px;
+}
+
+.search-bar {
+  display: flex;
+}
+
+.search-bar input {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  margin-right: 1rem;
+}
+
+.search-bar button {
+  padding: 0.5rem 1rem;
+  background-color: #ff4da6;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nav-links a {
+  margin-left: 2rem;
+  text-decoration: none; 
+  color: inherit;
+  color: white;
+  font-family:Arial, Helvetica, sans-serif
+}
+
+.login-btn {
+  padding: 0.5rem 1rem;
+  background-color: pink;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+/* Main Content Watch Page */
+.main-content-watch {
+  display: flex;
+  padding: 2rem;
+}
+
+.episode-list {
+  flex: 1;
+  background-color: #2c2c3b;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-right: 2rem;
+}
+
+.episode-list h2 {
+  color: #f06292;
+  margin-bottom: 1rem;
+}
+
+.episode-list input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.episode-list ul {
+  list-style: none;
+}
+
+.episode-list li {
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  background-color: #1c1c2b;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.episode-list li.active-episode {
+  background-color:  #35354e;
+}
+
+.episode-list li:hover {
+  background-color: #ff4da6;
+}
+
+.play-btn {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Video Player Section */
+.video-player-section {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.video-player {
+  background-color: #1c1c2b;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.video-placeholder {
+  background-color: #444;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.video-controls {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.video-controls button {
+  background-color: #2c2c3b;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.video-controls button:hover {
+  background-color: #f06292;
+}
+
+
+/* Recommendations Section */
+.recommendations {
+  display: flex;
+  padding: 2rem;
+}
+
+.recommended,
+.most-popular {
+  flex: 1;
+}
+
+.recommended h2,
+.most-popular h2 {
+  color: #f06292;
+  margin-bottom: 1rem;
+}
+
+.recommendation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.recommendation-card {
+  background-color: #2c2c3b;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.recommendation-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.most-popular ul {
+  list-style: none;
+}
+
+.most-popular li {
+  background-color: #2c2c3b;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+}
+
+.most-popular li:hover {
+  background-color: #35354e;
+}
+ 
+  /* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #2c2c3b;
+  color: #fff;
+  margin-top: 2rem;
+  border-radius: 5px;
+}
+.video-player video {
+  width: 100%; /* Ensure it scales responsively */
+  max-width: 800px; /* Limit the size of the video */
+  height: auto; /* Keep the aspect ratio */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Add a shadow to make the video pop */
+  background-color: black; /* Set a background color in case the video is loading */
+}
+.video-player {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto; /* Center the video */
+  background-color: #1a1a2e; /* Dark background to match your theme */
+  border-radius: 15px;
+  overflow: hidden; /* Ensure rounded corners apply to the video */
+  padding: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5); /* Add a deeper shadow */
+}
+.play-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.play-overlay img {
+  width: 50px;
+  height: 50px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.play-overlay:hover img {
+  opacity: 1;
+}
